@@ -1,0 +1,203 @@
+body {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.hero {
+  background-image: url('Assets/Portfolio\ Background.jpg');
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-content {
+  min-height: 100vh;
+  text-align: center;
+}
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+
+.accordion {
+  margin-top: 40px;
+}
+
+
+details {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+summary {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+  width: 100%;
+  color: #fff;
+  height: 8rem;
+  empty-cells: hide;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonScrollContainer {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  
+}
+
+.buttonScroll {
+  background-color: #007bff;
+  color: #ffffff; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  min-width: 120px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttonScroll:hover {
+  background-color: #0056b3; 
+}
+
+.Menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 8rem;
+  min-height: 100vh;
+
+  background-color: #444;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Menu a {
+  min-width: 7rem;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 30px;
+  padding: 20px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Menu a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .Menu {
+    display: none; 
+  }
+
+
+
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+
+  gap: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+}
